@@ -1,0 +1,6 @@
+{
+  "name": "Elite Kingston Barbershop",
+  "description": "Premium men's barbershop in Kingston, Ontario offering precision haircuts, skin fades, beard care, hot towel shaves, and walk-in grooming services at 172 Division St.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

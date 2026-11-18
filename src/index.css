@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    --silver-hairline: #d9dfe6;
+    --silver-surface: #f4f6f8;
+    --silver-muted: #64707d;
+    --silver-metallic: #9aa4b0;
+    --obsidian: #111315;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    color: var(--obsidian);
+    background-color: #ffffff;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans-body {
+  font-family: var(--font-sans);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.silver-rule {
+  background: linear-gradient(90deg, rgba(203, 213, 225, 0) 0%, #cbd5e1 20%, #94a3b8 50%, #cbd5e1 80%, rgba(203, 213, 225, 0) 100%);
+}
+
+.silver-sheen {
+  background: linear-gradient(135deg, #ffffff 0%, #f3f5f8 48%, #e8ecf1 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
